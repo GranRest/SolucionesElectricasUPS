@@ -1,0 +1,19 @@
+#logo {
+  width: 10%;
+  font-size: 30px;
+  float: left;
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+#logo img {
+  padding: 0px;
+  margin: 13px;
+  display: block;
+  float: left;
+  height: 60px;
+  margin-top: -9px;
+  /* margin-right: 10px; */
+  animation: latir infinite 5s linear;
+}
