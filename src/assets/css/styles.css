@@ -89,7 +89,8 @@
   margin: 13px;
   display: block;
   float: left;
-  height: 60px;
+  height: 90px;
+  width: 250px;
   margin-top: -9px;
   /* margin-right: 10px; */
   animation: latir infinite 5s linear;
