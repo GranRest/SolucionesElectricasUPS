@@ -31,7 +31,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto my-2 my-lg-0">
-        <li class="nav-item"><a [routerLink]="['home']">Inicio</a></li>
+        <li class="nav-item">
+          <a [routerLink]="['home']">Inicio</a>
+        </li>
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -43,11 +45,31 @@
             Productos
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Baterías</a></li>
-            <li><a class="dropdown-item" href="#">Electrodos Activos</a></li>
-            <li><a class="dropdown-item" href="#">Reguladores</a></li>
-            <li><a class="dropdown-item" href="#">Acumuladores</a></li>
-            <li><a class="dropdown-item" href="#">Tablero by PASS</a></li>
+            <li>
+              <a [routerLink]="['baterias']" class="dropdown-item" href="#"
+                >Baterías</a
+              >
+            </li>
+            <li>
+              <a [routerLink]="['electrodos']" class="dropdown-item" href="#"
+                >Electrodos Activos</a
+              >
+            </li>
+            <li>
+              <a [routerLink]="['reguladores']" class="dropdown-item" href="#"
+                >Reguladores</a
+              >
+            </li>
+            <li>
+              <a [routerLink]="['acumuladores']" class="dropdown-item" href="#"
+                >Acumuladores</a
+              >
+            </li>
+            <li>
+              <a [routerLink]="['tablero']" class="dropdown-item" href="#"
+                >Tablero by PASS</a
+              >
+            </li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -61,8 +83,19 @@
             Catálogo UPS
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">UPS Online</a></li>
-            <li><a class="dropdown-item" href="#">UPS Interactivo</a></li>
+            <li>
+              <a [routerLink]="['upsonline']" class="dropdown-item" href="#"
+                >UPS Online</a
+              >
+            </li>
+            <li>
+              <a
+                [routerLink]="['upsinteractivo']"
+                class="dropdown-item"
+                href="#"
+                >UPS Interactivo</a
+              >
+            </li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -76,27 +109,47 @@
             Servicios
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Mantenimiento UPS</a></li>
             <li>
-              <a class="dropdown-item" href="#">Mantenimiento Eléctrico</a>
+              <a [routerLink]="['manteniups']" class="dropdown-item" href="#"
+                >Mantenimiento UPS</a
+              >
             </li>
             <li>
-              <a class="dropdown-item" href="#"
+              <a [routerLink]="['mantenielec']" class="dropdown-item" href="#"
+                >Mantenimiento Eléctrico</a
+              >
+            </li>
+            <li>
+              <a
+                [routerLink]="['mantenicamaras']"
+                class="dropdown-item"
+                href="#"
                 >Mantenimiento camaras y control acceso</a
               >
             </li>
             <li>
-              <a class="dropdown-item" href="#">Diseño de centros de Datos</a>
+              <a [routerLink]="['mantenidatos']" class="dropdown-item" href="#"
+                >Diseño de centros de Datos</a
+              >
             </li>
-            <li><a class="dropdown-item" href="#">Tablero by PASS</a></li>
+            <li>
+              <a
+                [routerLink]="['mantenitablero']"
+                class="dropdown-item"
+                href="#"
+                >Tablero by PASS</a
+              >
+            </li>
           </ul>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Preguntas</a>
+          <a [routerLink]="['preguntas']" href="#portfolio">Preguntas</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contactos</a>
+          <a [routerLink]="['contactos']" class="nav-link" href="#contact"
+            >Contactos</a
+          >
         </li>
       </ul>
     </div>
