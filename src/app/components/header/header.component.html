@@ -15,7 +15,10 @@
     </div> -->
     <div id="logo">
       <a class="navbar-brand" href="#page-top">
-        <img src="assets/images/imagotipos/Imagotiposinfondo.png" class="app-logo" />
+        <img
+          src="assets/images/imagotipos/Imagotiposinfondo.png"
+          class="app-logo"
+        />
       </a>
     </div>
     <!-- <a class="navbar-brand" href="#page-top"
@@ -37,10 +40,16 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ms-auto my-2 my-lg-0">
         <li class="nav-item">
-          <a [routerLink]="['home']">Inicio</a>
-        </li>
-        <li class="nav-item dropdown">
           <a
+            [routerLink]="['home']"
+            [routerLinkActive]="['active']"
+            class="nav-link"
+            >Inicio</a
+          >
+        </li>
+        <li class="nav-item dropdown" [routerLinkActive]="['active']">
+          <a
+            [routerLinkActive]="['active']"
             class="nav-link dropdown-toggle"
             href="#"
             role="button"
@@ -51,27 +60,47 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a [routerLink]="['baterias']" class="dropdown-item" href="#"
+              <a
+                [routerLink]="['baterias']"
+                [routerLinkActive]="['active']"
+                class="dropdown-item"
+                href="#"
                 >Baterías</a
               >
             </li>
             <li>
-              <a [routerLink]="['electrodos']" class="dropdown-item" href="#"
+              <a
+                [routerLink]="['electrodos']"
+                [routerLinkActive]="['active']"
+                class="dropdown-item"
+                href="#"
                 >Electrodos Activos</a
               >
             </li>
             <li>
-              <a [routerLink]="['reguladores']" class="dropdown-item" href="#"
+              <a
+                [routerLink]="['reguladores']"
+                [routerLinkActive]="['active']"
+                class="dropdown-item"
+                href="#"
                 >Reguladores</a
               >
             </li>
             <li>
-              <a [routerLink]="['acumuladores']" class="dropdown-item" href="#"
+              <a
+                [routerLink]="['acumuladores']"
+                [routerLinkActive]="['active']"
+                class="dropdown-item"
+                href="#"
                 >Acumuladores</a
               >
             </li>
             <li>
-              <a [routerLink]="['tablero']" class="dropdown-item" href="#"
+              <a
+                [routerLink]="['tablero']"
+                [routerLinkActive]="['active']"
+                class="dropdown-item"
+                href="#"
                 >Tablero by PASS</a
               >
             </li>
@@ -89,13 +118,18 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a [routerLink]="['upsonline']" class="dropdown-item" href="#"
+              <a
+                [routerLink]="['upsonline']"
+                [routerLinkActive]="['active']"
+                class="dropdown-item"
+                href="#"
                 >UPS Online</a
               >
             </li>
             <li>
               <a
                 [routerLink]="['upsinteractivo']"
+                [routerLinkActive]="['active']"
                 class="dropdown-item"
                 href="#"
                 >UPS Interactivo</a
@@ -115,31 +149,45 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a [routerLink]="['manteniups']" class="dropdown-item" href="#"
+              <a
+                [routerLink]="['manteniups']"
+                [routerLinkActive]="['active']"
+                class="dropdown-item"
+                href="#"
                 >Mantenimiento UPS</a
               >
             </li>
             <li>
-              <a [routerLink]="['mantenielec']" class="dropdown-item" href="#"
+              <a
+                [routerLink]="['mantenielec']"
+                [routerLinkActive]="['active']"
+                class="dropdown-item"
+                href="#"
                 >Mantenimiento Eléctrico</a
               >
             </li>
             <li>
               <a
                 [routerLink]="['mantenicamaras']"
+                [routerLinkActive]="['active']"
                 class="dropdown-item"
                 href="#"
                 >Mantenimiento camaras y control acceso</a
               >
             </li>
             <li>
-              <a [routerLink]="['mantenidatos']" class="dropdown-item" href="#"
+              <a
+                [routerLink]="['mantenidatos']"
+                [routerLinkActive]="['active']"
+                class="dropdown-item"
+                href="#"
                 >Diseño de centros de Datos</a
               >
             </li>
             <li>
               <a
                 [routerLink]="['mantenitablero']"
+                [routerLinkActive]="['active']"
                 class="dropdown-item"
                 href="#"
                 >Tablero by PASS</a
@@ -149,10 +197,20 @@
         </li>
 
         <li class="nav-item">
-          <a [routerLink]="['preguntas']" href="#portfolio">Preguntas</a>
+          <a
+            [routerLink]="['preguntas']"
+            [routerLinkActive]="['active']"
+            class="nav-link"
+            href="#portfolio"
+            >Preguntas</a
+          >
         </li>
         <li class="nav-item">
-          <a [routerLink]="['contactos']" class="nav-link" href="#contact"
+          <a
+            [routerLink]="['contactos']"
+            [routerLinkActive]="['active']"
+            class="nav-link"
+            href="#contact"
             >Contactos</a
           >
         </li>

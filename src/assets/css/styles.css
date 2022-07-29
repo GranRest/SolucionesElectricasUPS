@@ -95,6 +95,14 @@
   /* margin-right: 10px; */
   animation: latir infinite 5s linear;
 }
+#mainNav a:hover,
+.active {
+  color: rgb(235, 131, 46) !important;
+}
+#mainNav li:hover,
+.active {
+  color: rgb(235, 131, 46) !important;
+}
 
 #slider {
   width: 100%;
