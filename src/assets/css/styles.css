@@ -88,10 +88,10 @@
   padding: 0px;
   display: block;
   float: left;
-  height: 90px;
-  width: 250px;
-  margin-top: -9px;
-  /* margin-right: 10px; */
+  height: 150px;
+  width: 400px;
+  /* margin-top: 0px;
+  margin-right: 0px;  */
   animation: latir infinite 5s linear;
 }
 #mainNav a:hover,
