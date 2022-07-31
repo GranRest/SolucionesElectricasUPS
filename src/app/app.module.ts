@@ -25,6 +25,7 @@ import { MantenicamarasComponent } from './components/mantenicamaras/mantenicama
 import { MantenidatosComponent } from './components/mantenidatos/mantenidatos.component';
 import { MantenitableroComponent } from './components/mantenitablero/mantenitablero.component';
 import { VistacatalogoComponent } from './components/vistacatalogo/vistacatalogo.component';
+import { DetallecatalogoComponent } from './components/detallecatalogo/detallecatalogo.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { VistacatalogoComponent } from './components/vistacatalogo/vistacatalogo
     MantenicamarasComponent,
     MantenidatosComponent,
     MantenitableroComponent,
-    VistacatalogoComponent
+    VistacatalogoComponent,
+    DetallecatalogoComponent
   ],
   imports: [
     BrowserModule,

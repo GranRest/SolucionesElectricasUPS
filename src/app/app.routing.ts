@@ -20,6 +20,7 @@ import { MantenielecComponent } from "./components/mantenielec/mantenielec.compo
 import { MantenidatosComponent } from "./components/mantenidatos/mantenidatos.component";
 import { MantenicamarasComponent } from "./components/mantenicamaras/mantenicamaras.component";
 import { MantenitableroComponent } from "./components/mantenitablero/mantenitablero.component";
+import { DetallecatalogoComponent } from "./components/detallecatalogo/detallecatalogo.component";
 
 //Array de Rutas
 const appRoutes:Routes=[
@@ -39,6 +40,7 @@ const appRoutes:Routes=[
     {path:'mantenicamaras',component:MantenicamarasComponent},
     {path:'mantenidatos',component:MantenidatosComponent},
     {path:'mantenitablero',component:MantenitableroComponent},
+    {path:'detallecatalogo',component:DetallecatalogoComponent},
     {path:'**', component:ErrorComponent}
 ];
 
