@@ -40,7 +40,7 @@ const appRoutes:Routes=[
     {path:'mantenicamaras',component:MantenicamarasComponent},
     {path:'mantenidatos',component:MantenidatosComponent},
     {path:'mantenitablero',component:MantenitableroComponent},
-    {path:'detallecatalogo',component:DetallecatalogoComponent},
+    {path:'detallecatalogo/:id',component:DetallecatalogoComponent},
     {path:'**', component:ErrorComponent}
 ];
 
