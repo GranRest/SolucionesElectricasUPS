@@ -26,6 +26,7 @@ import { MantenidatosComponent } from './components/mantenidatos/mantenidatos.co
 import { MantenitableroComponent } from './components/mantenitablero/mantenitablero.component';
 import { VistacatalogoComponent } from './components/vistacatalogo/vistacatalogo.component';
 import { DetallecatalogoComponent } from './components/detallecatalogo/detallecatalogo.component';
+import { CableadoestructuradoComponent } from './components/cableadoestructurado/cableadoestructurado.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { DetallecatalogoComponent } from './components/detallecatalogo/detalleca
     MantenidatosComponent,
     MantenitableroComponent,
     VistacatalogoComponent,
-    DetallecatalogoComponent
+    DetallecatalogoComponent,
+    CableadoestructuradoComponent
   ],
   imports: [
     BrowserModule,
