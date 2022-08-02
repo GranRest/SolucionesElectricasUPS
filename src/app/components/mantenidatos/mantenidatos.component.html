@@ -1,2 +1,19 @@
 <app-sliderpaginas></app-sliderpaginas>
-<p>mantenidatos works!</p>
+
+<div style="justify-content: center">
+    <h1 class="h1">Cableado Estucturado o Diseño de Centro de Datos</h1>
+  </div>
+  
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div *ngFor="let cableadodato of cableadodatos; let i = index">
+      <div class="card h-100">
+        <img src="{{ cableadodato.image }}" class="card-img-top" alt="20" />
+        <div class="card-body">
+          <h5 class="card-title">{{ cableadodato.title }}</h5>
+        </div>
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary" type="button">Leer mas</button>
+        </div>
+      </div>
+    </div>
+  </div>
