@@ -20,7 +20,7 @@ import { MantenielecComponent } from './components/mantenielec/mantenielec.compo
 import { MantenidatosComponent } from './components/mantenidatos/mantenidatos.component';
 import { MantenicamarasComponent } from './components/mantenicamaras/mantenicamaras.component';
 import { MantenitableroComponent } from './components/mantenitablero/mantenitablero.component';
-import { DetallecatalogoComponent } from './components/detallecatalogo/detallecatalogo.component';
+import { DetallecatalogoComponent } from './components/vistascatalogos/detallecatalogo/detallecatalogo.component';
 import { VistaelectrodosComponent } from './components/vistascatalogos/vistaelectrodos/vistaelectrodos.component';
 import { VistareguladoresComponent } from './components/vistascatalogos/vistareguladores/vistareguladores.component';
 import { VistaacumuladoresComponent } from './components/vistascatalogos/vistaacumuladores/vistaacumuladores.component';
