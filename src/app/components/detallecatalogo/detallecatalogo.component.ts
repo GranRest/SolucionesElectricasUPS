@@ -3,7 +3,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Producto } from 'src/app/models/Productos';
 import { Bateria } from 'src/app/models/Baterias';
 
-import { ProductsService } from './../../products.service';
+import { ProductsService } from '../../services/products.service';
 import { IProducto } from 'src/app/interfaces/inproducto';
 
 @Component({

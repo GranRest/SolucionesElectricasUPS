@@ -1,20 +1,26 @@
 <app-sliderpaginas></app-sliderpaginas>
 <div class="center">
-    <div style="justify-content: center">
-        <h1 class="h1">Electrodos Activos</h1>
-      </div>
-      
-      <div class="row row-cols-1 row-cols-md-4 g-4">
-        <div *ngFor="let electrodo of electrodos; let i = index">
-          <div class="card h-100">
-            <img src="{{ electrodo.image }}" class="card-img-top" alt="20" />
-            <div class="card-body">
-              <h5 class="card-title">{{ electrodo.title }}</h5>
-            </div>
-            <div class="d-grid gap-2">
-              <button class="btn btn-primary" type="button">Leer mas</button>
-            </div>
-          </div>
+  <div style="justify-content: center">
+    <h1 class="h1">Electrodos Activos</h1>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div *ngFor="let electrodo of electrodos; let i = index">
+      <div class="card h-100">
+        <img src="{{ electrodo.image }}" class="card-img-top" alt="20" />
+        <div class="card-body">
+          <h5 class="card-title">{{ electrodo.title }}</h5>
+        </div>
+        <div class="d-grid gap-2">
+          <button
+            class="btn btn-primary"
+            type="button"
+            (click)="redireccionamientoe(electrodo.codigo)"
+          >
+            Leer mas
+          </button>
         </div>
       </div>
+    </div>
+  </div>
 </div>

@@ -27,6 +27,10 @@ import { MantenitableroComponent } from './components/mantenitablero/mantenitabl
 import { VistacatalogoComponent } from './components/vistacatalogo/vistacatalogo.component';
 import { DetallecatalogoComponent } from './components/detallecatalogo/detallecatalogo.component';
 import { CableadoestructuradoComponent } from './components/cableadoestructurado/cableadoestructurado.component';
+import { VistaelectrodosComponent } from './components/vistascatalogos/vistaelectrodos/vistaelectrodos.component';
+import { VistareguladoresComponent } from './components/vistascatalogos/vistareguladores/vistareguladores.component';
+import { VistaacumuladoresComponent } from './components/vistascatalogos/vistaacumuladores/vistaacumuladores.component';
+import { VistatableroComponent } from './components/vistascatalogos/vistatablero/vistatablero.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +58,11 @@ import { CableadoestructuradoComponent } from './components/cableadoestructurado
     MantenitableroComponent,
     VistacatalogoComponent,
     DetallecatalogoComponent,
-    CableadoestructuradoComponent
+    CableadoestructuradoComponent,
+    VistaelectrodosComponent,
+    VistareguladoresComponent,
+    VistaacumuladoresComponent,
+    VistatableroComponent
   ],
   imports: [
     BrowserModule,

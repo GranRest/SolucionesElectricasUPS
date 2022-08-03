@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { IProducto } from 'src/app/interfaces/inproducto';
-import { Producto } from 'src/app/models/Productos';
 import { ReguladoresService } from 'src/app/services/reguladores.service';
 
 @Component({
-  selector: 'app-reguladores',
-  templateUrl: './reguladores.component.html',
-  styleUrls: ['./reguladores.component.css'],
+  selector: 'app-vistareguladores',
+  templateUrl: './vistareguladores.component.html',
+  styleUrls: ['./vistareguladores.component.css'],
 })
-export class ReguladoresComponent implements OnInit {
-  public reguladores: IProducto[] = [];
+export class VistareguladoresComponent implements OnInit {
+  regulador: IProducto;
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,
@@ -18,9 +17,7 @@ export class ReguladoresComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.reguladores = this.servicioReguladores.geAllProducts();
-  }
-  redireccionamiento(id: any) {
-    this._router.navigate(['/vistareguladores', id]);
+    const id = this._route.snapshot.params['id'];
+    this.regulador = this.servicioReguladores.getProduct(id);
   }
 }
