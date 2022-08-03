@@ -4,6 +4,7 @@ import { Producto } from 'src/app/models/Productos';
 import { Bateria } from 'src/app/models/Baterias';
 
 import { ProductsService } from './../../products.service';
+import { IProducto } from 'src/app/interfaces/inproducto';
 
 @Component({
   selector: 'app-detallecatalogo',
@@ -11,20 +12,23 @@ import { ProductsService } from './../../products.service';
   styleUrls: ['./detallecatalogo.component.css'],
 })
 export class DetallecatalogoComponent implements OnInit {
-  // product: Producto = {} as Producto;
-
+  bateria: IProducto;
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,
     private servicioProductos: ProductsService
   ) {}
-  public listabaterias: Array<any> = [];
 
   ngOnInit(): void {
-    this.servicioProductos.disparadorDeProductos.subscribe((data) => {
-      console.log('Recibiendo data..', data);
-      this.listabaterias.push(data);
-      console.log('Datos en ArrayList', this.listabaterias);
-    });
+    const id = this._route.snapshot.params['id'];
+
+    this.bateria = this.servicioProductos.getProduct(id);
+
+    /*    this.servicioProductos.disparadorDeProductos.subscribe((bateria) => {
+      this.baterias = bateria;
+      // console.log('Recibiendo data..', data);
+
+      console.log('Datos en ArrayList', this.baterias);
+    }); */
   }
 }
