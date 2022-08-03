@@ -4,12 +4,12 @@ import { IProducto } from 'src/app/interfaces/inproducto';
 import { ManteelectricoService } from 'src/app/services/manteelectrico.service';
 
 @Component({
-  selector: 'app-mantenielec',
-  templateUrl: './mantenielec.component.html',
-  styleUrls: ['./mantenielec.component.css'],
+  selector: 'app-vistamanteelectrico',
+  templateUrl: './vistamanteelectrico.component.html',
+  styleUrls: ['./vistamanteelectrico.component.css'],
 })
-export class MantenielecComponent implements OnInit {
-  public manteelectrico: IProducto[] = [];
+export class VistamanteelectricoComponent implements OnInit {
+  manteelectrico: IProducto;
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,
@@ -17,9 +17,7 @@ export class MantenielecComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.manteelectrico = this.serviciomanteelec.geAllProducts();
-  }
-  redireccionamiento(id: any) {
-    this._router.navigate(['/detallemanteelec/', id]);
+    const id = this._route.snapshot.params['id'];
+    this.manteelectrico = this.serviciomanteelec.getProduct(id);
   }
 }
