@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Bateria } from 'src/app/models/Baterias';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { ProductsService } from 'src/app/services/products.service';
-import { IProducto } from 'src/app/interfaces/inproducto';
+import { IProducto } from 'src/app/interfaces/iproducto';
 
 @Component({
   selector: 'app-baterias',
@@ -18,7 +18,7 @@ export class BateriasComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.baterias = this.servicioProductos.geAllProducts();
+    this.baterias = this.servicioProductos.getAllBaterias();
   }
   //Creacion de redireccionamiento desde el Baterias al DetalleVista
   redireccionamiento(id: any) {

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import { IElectrodos } from 'src/app/interfaces/ielectrodos';
-import { IProducto } from 'src/app/interfaces/inproducto';
+import { IProducto } from 'src/app/interfaces/iproducto';
 import { Producto } from 'src/app/models/Productos';
 import { ElectrodosServiceService } from 'src/app/services/electrodos.service.service';
 
@@ -11,7 +10,7 @@ import { ElectrodosServiceService } from 'src/app/services/electrodos.service.se
   styleUrls: ['./electrodos.component.css'],
 })
 export class ElectrodosComponent implements OnInit {
-  public electrodos: IElectrodos[] = [];
+  public electrodos: IProducto[] = [];
 
   constructor(
     private _route: ActivatedRoute,

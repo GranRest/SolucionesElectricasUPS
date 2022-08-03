@@ -3,8 +3,8 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Producto } from 'src/app/models/Productos';
 import { Bateria } from 'src/app/models/Baterias';
 
-import { ProductsService } from '../../services/products.service';
-import { IProducto } from 'src/app/interfaces/inproducto';
+import { ProductsService } from '../../../services/products.service';
+import { IProducto } from 'src/app/interfaces/iproducto';
 
 @Component({
   selector: 'app-detallecatalogo',
@@ -22,7 +22,7 @@ export class DetallecatalogoComponent implements OnInit {
   ngOnInit(): void {
     const id = this._route.snapshot.params['id'];
 
-    this.bateria = this.servicioProductos.getProduct(id);
+    this.bateria = this.servicioProductos.getBateria(id);
 
     /*    this.servicioProductos.disparadorDeProductos.subscribe((bateria) => {
       this.baterias = bateria;

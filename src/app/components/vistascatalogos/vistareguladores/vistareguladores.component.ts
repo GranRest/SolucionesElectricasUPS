@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { IProducto } from 'src/app/interfaces/inproducto';
+import { IProducto } from 'src/app/interfaces/iproducto';
 import { ReguladoresService } from 'src/app/services/reguladores.service';
 
 @Component({

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
-import { IElectrodos } from 'src/app/interfaces/ielectrodos';
-
-import { IProducto } from 'src/app/interfaces/inproducto';
+import { IProducto } from 'src/app/interfaces/iproducto';
 
 import { ElectrodosServiceService } from '../../../services/electrodos.service.service';
 
@@ -12,7 +10,7 @@ import { ElectrodosServiceService } from '../../../services/electrodos.service.s
   styleUrls: ['./vistaelectrodos.component.css'],
 })
 export class VistaelectrodosComponent implements OnInit {
-  electrodos: IElectrodos;
+  electrodos: IProducto;
   constructor(
     private _route: ActivatedRoute,
     private _router: Router,

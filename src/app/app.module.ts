@@ -25,7 +25,7 @@ import { MantenicamarasComponent } from './components/mantenicamaras/mantenicama
 import { MantenidatosComponent } from './components/mantenidatos/mantenidatos.component';
 import { MantenitableroComponent } from './components/mantenitablero/mantenitablero.component';
 import { VistacatalogoComponent } from './components/vistacatalogo/vistacatalogo.component';
-import { DetallecatalogoComponent } from './components/detallecatalogo/detallecatalogo.component';
+import { DetallecatalogoComponent } from './components/vistascatalogos/detallecatalogo/detallecatalogo.component';
 import { CableadoestructuradoComponent } from './components/cableadoestructurado/cableadoestructurado.component';
 import { VistaelectrodosComponent } from './components/vistascatalogos/vistaelectrodos/vistaelectrodos.component';
 import { VistareguladoresComponent } from './components/vistascatalogos/vistareguladores/vistareguladores.component';
