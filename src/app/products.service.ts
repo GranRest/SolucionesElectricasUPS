@@ -1,5 +1,6 @@
 import { EventEmitter, Injectable, Output } from '@angular/core';
 import { Producto } from './models/Productos';
+import { IProducto } from './interfaces/inproducto';
 
 @Injectable({
   providedIn: 'root',
@@ -7,7 +8,7 @@ import { Producto } from './models/Productos';
 export class ProductsService {
   @Output() disparadorDeProductos: EventEmitter<any> = new EventEmitter();
 
-  products: Producto[] = [
+  products: IProducto[] = [
     {
       codigo: '1',
       image: 'assets/images/public/baterias/6V-1.2AH-1-300x300.jpg',
