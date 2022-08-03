@@ -1,2 +1,26 @@
 <app-sliderpaginas></app-sliderpaginas>
-<p>mantenicamaras works!</p>
+<div class="center">
+  <div style="justify-content: center">
+    <h1 class="h1">Mantenimiento de Camaras</h1>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div *ngFor="let camara of mantecamaras; let i = index">
+      <div class="card h-100">
+        <img src="{{ camara.image }}" class="card-img-top" alt="20" />
+        <div class="card-body">
+          <h5 class="card-title">{{ camara.title }}</h5>
+        </div>
+        <div class="d-grid gap-2">
+          <button
+            class="btn btn-primary"
+            type="button"
+            (click)="redireccionamiento(camara.codigo)"
+          >
+            Leer mas
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

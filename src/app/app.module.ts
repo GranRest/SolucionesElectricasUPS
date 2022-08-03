@@ -31,6 +31,12 @@ import { VistaelectrodosComponent } from './components/vistascatalogos/vistaelec
 import { VistareguladoresComponent } from './components/vistascatalogos/vistareguladores/vistareguladores.component';
 import { VistaacumuladoresComponent } from './components/vistascatalogos/vistaacumuladores/vistaacumuladores.component';
 import { VistatableroComponent } from './components/vistascatalogos/vistatablero/vistatablero.component';
+import { VistaupsonlineComponent } from './components/vistascatalogos/vistaupsonline/vistaupsonline.component';
+import { VistaupsinteractivoComponent } from './components/vistascatalogos/vistaupsinteractivo/vistaupsinteractivo.component';
+import { VistamanteniupsComponent } from './components/vistascatalogos/vistamanteniups/vistamanteniups.component';
+import { VistamanteelectricoComponent } from './components/vistascatalogos/vistamanteelectrico/vistamanteelectrico.component';
+import { VistamantecamarasComponent } from './components/vistascatalogos/vistamantecamaras/vistamantecamaras.component';
+import { VistacentrodatosComponent } from './components/vistascatalogos/vistacentrodatos/vistacentrodatos.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +68,13 @@ import { VistatableroComponent } from './components/vistascatalogos/vistatablero
     VistaelectrodosComponent,
     VistareguladoresComponent,
     VistaacumuladoresComponent,
-    VistatableroComponent
+    VistatableroComponent,
+    VistaupsonlineComponent,
+    VistaupsinteractivoComponent,
+    VistamanteniupsComponent,
+    VistamanteelectricoComponent,
+    VistamantecamarasComponent,
+    VistacentrodatosComponent
   ],
   imports: [
     BrowserModule,
