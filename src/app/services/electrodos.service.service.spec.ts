@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { Electrodos.ServiceService } from './electrodos.service.service';
+import { ElectrodosServiceService } from './electrodos.service.service';
 
 describe('Electrodos.ServiceService', () => {
-  let service: Electrodos.ServiceService;
+  let service: ElectrodosServiceService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(Electrodos.ServiceService);
+    service = TestBed.inject(ElectrodosServiceService);
   });
 
   it('should be created', () => {
