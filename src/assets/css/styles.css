@@ -76,14 +76,13 @@
   --bs-body-bg: #fff;
 }
 #logo {
-  width: auto; 
+  width: auto;
   float: left;
   margin-left: 0px;
   display: flex;
   font-size: 1px;
   justify-content: end;
-  border: 0px solid black; 
-  
+  border: 0px solid black;
 }
 
 #logo img {
@@ -112,7 +111,7 @@
   text-shadow: 0px 0px 5px #444; */
   background: #bbbbbb;
   /*DEGRADADO CSS*/
-/*   background: rgb(2, 0, 36);
+  /*   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
@@ -128,6 +127,35 @@
   text-align: center;
   font-weight: bold;
   background: #bbbbbb;
+}
+
+.mid-form {
+  width: 50%;
+  margin: 0px auto;
+}
+
+.mid-form label {
+  display: block;
+  float: left;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid #ccc;
+  padding: 3px;
+  margin-bottom: 5px;
+  transition: 300ms all;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0px 0px 5px #eee inset;
 }
 
 *,
