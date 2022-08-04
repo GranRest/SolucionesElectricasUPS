@@ -1,26 +1,64 @@
 <app-sliderpaginas></app-sliderpaginas>
 <div class="center">
   <div style="justify-content: center">
-    <h1 class="h1">Mantenimiento de Camaras</h1>
+    <h1 class="h1">Mantenimiento Cámaras</h1>
   </div>
 
   <div class="row row-cols-1 row-cols-md-4 g-4">
     <div *ngFor="let camara of mantecamaras; let i = index">
       <div class="card h-100">
-        <img src="{{ camara.image }}" class="card-img-top" alt="20" />
+        <img src="{{ camara.image }}" class="card-img-top" alt="camara-vigilancia" />
         <div class="card-body">
           <h5 class="card-title">{{ camara.title }}</h5>
-        </div>
-        <div class="d-grid gap-2">
-          <button
-            class="btn btn-primary"
-            type="button"
-            (click)="redireccionamiento(camara.codigo)"
-          >
-            Leer mas
-          </button>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<div class="card-body">
+  <p class="card-text">
+    Mantenimiento de cámaras de vigilancia:
+    <li>Revisión del equipo DVR (Grabadora de Vídeo Digital) verificando que esté funcionando de forma correcta y que
+      la grabación esté libre de distorsión. Además, que este configurado de forma óptima para ahorrar espacio en el
+      Disco Duro.</li>
+    <li>Revisión de la transmisión vídeo en tiempo real al monitor.</li>
+    <li>Revisión del enlace remoto vía internet.</li>
+    <li>Revisar que el monitor tenga buen brillo y contraste.</li>
+    <li>Limpieza de los monitores, paneles de control y teclados con una solución diluida de limpieza.</li>
+    <li>Revisión de la fuente de poder y su funcionamiento.</li>
+  </p>
+  <p class="card-text">
+    Mantenimiento a las Cámaras:
+    <li>Verificar que la cámara esté ajustada y posicionada de forma correcta.</li>
+    <li>Verificar que el lente de enfoque y el iris automático estén ajustados correctamente.</li>
+    <li>Limpiar el exterior de la cámara, verificando que estén libres de polvo por dentro y por fuera.</li>
+    <li>Que las cámaras PTZ estén funcionando correctamente con el controlador o software.</li>
+  </p>
+  <p class="card-text">
+    Mantenimiento al Cableado:
+    <li>Verificación del cableado a las cámaras y sensores, revisando que estén en buenas condiciones y conectados de
+      forma correcta.</li>
+    <li>Asegurarse que el cableado esté correctamente sujetado a las paredes o vigas y que tengan buena insolación.
+    </li>
+    <li>Revisar los conectores y puntos de entrada de cable para cerciorar que el cableado no tenga una falsa conexión.
+    </li>
+    <li>Revisar que el cable de transmisión tenga buena señal de vídeo y que esté libre de distorsión.</li>
+    <li>Revisar que todos los conectores estén aislados del conducto y cajas de paso.</li>
+  </p>
+  <p class="card-text">
+    Mantenimiento del Sistema de Alarma:
+    <li>Verificar que el sistema de alarma esté enviando y recibiendo información a la Central de Monitoreo y/o al
+      propietario a través del teléfono o TCP/IP.</li>
+    <li>Verificar que la tarjeta madre del equipo esté funcionando correctamente y que el voltaje de entrada y salida
+      sean correctos.</li>
+    <li>Revisar que el teclado esté funcionando correctamente, activación y desactivación y programación en general
+      etc.</li>
+    <li>Verificar que la sirena exterior esté funcionando al igual que la luz de estrobo en caso de existir.</li>
+    <li>Verificar que la batería de respaldo mantenga carga y limpiar sus terminales.</li>
+    <li>Limpieza y verificación del funcionamiento de los sensores de movimiento, contactos magnéticos, sensores de
+      humo, etc.</li>
+    <li>Verificar el estado del cableado de conexión del panel a los sensores.</li>
+    <li>Verificar que el botón de pánico funcione apropiadamente.</li>
+  </p>
 </div>

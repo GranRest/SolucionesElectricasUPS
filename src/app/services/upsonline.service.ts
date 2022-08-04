@@ -10,13 +10,25 @@ export class UpsonlineService {
       codigo: '1',
       image:
         'assets/images/public/ups 1kva 2kva 3kva online 110 v/sistemas-ininterrumpidos-monofasico-1-10-kva.jpg',
-      title: 'UPS online 1',
-  },
+      title: '1/2/3 Kva Online 110 Vac',
+    },
     {
       codigo: '2',
       image:
         'assets/images/public/ups 1kva 2kva 3kva online 220 v/POWEST-TITAN-3-kva-220.jpg',
-      title: 'UPS online 2',
+      title: '1/2/3 Kva Online 220 Vac',
+    },
+    {
+      codigo: '3',
+      image:
+        'assets/images/public/ups 6 kva y 10 kva bifasico/POWEST-TITAN-BIFASICO-6-10-KVA.jpg',
+      title: 'Bifásicos Online 6/10 KVA',
+    },
+    {
+      codigo: '4',
+      image:
+        'assets/images/public/ups 10 kva , 15 kva trifasico/10-30-kva-UL.jpg',
+      title: 'Trifásicos Online 10/15/20 KVA UL',
     },
   ];
   constructor() {}

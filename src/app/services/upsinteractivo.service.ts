@@ -10,7 +10,7 @@ export class UpsinteractivoService {
       codigo: '1',
       image:
         'assets/images/public/UPS INTERACTIVOS DE 500 VA A 2000VA/UPS POWEST MICRONET 1000-2000 VA.jpg',
-      title: 'UPS Interactivo 1',
+      title: '500 - 2000 VA',
    },
   ];
   constructor() {}

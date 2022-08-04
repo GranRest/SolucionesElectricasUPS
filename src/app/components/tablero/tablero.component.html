@@ -4,21 +4,22 @@
   <h1 class="h1">Tableros By Pass</h1>
 </div>
 
+<div class="card-body">
+    <h5 class="h5">Potencias desde 1 a 100 KVA</h5>
+  <p class="card-text" align="justify">
+    Un bypass eléctrico es una desviación de un circuito eléctrico que permite la comunicación directa entre dos puntos.
+  </p>
+  <p class="card-text" align="justify">
+    Sistema mecánico que permite retirar el equipo UPS de la línea de alimentación, y así realizar una intervención al equipo sin ser necesario el apagado de las cargas que respalda el equipo UPS.
+  </p>
+</div>
+
 <div class="row row-cols-1 row-cols-md-4 g-4">
   <div *ngFor="let tablero of tableros; let i = index">
     <div class="card h-100">
       <img src="{{ tablero.image }}" class="card-img-top" alt="20" />
       <div class="card-body">
         <h5 class="card-title">{{ tablero.title }}</h5>
-      </div>
-      <div class="d-grid gap-2">
-        <button
-          class="btn btn-primary"
-          type="button"
-          (click)="redireccionamiento(tablero.codigo)"
-        >
-          Leer mas
-        </button>
       </div>
     </div>
   </div>

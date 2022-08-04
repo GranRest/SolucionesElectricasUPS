@@ -4,21 +4,163 @@
   <h1 class="h1">UPS Online</h1>
 </div>
 
-<div class="card mb-3" style="max-width: 700px">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img [src]="upsonline.image" class="img-fluid rounded-start" alt="..." />
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">{{ upsonline.title }}</h5>
-        <p class="card-text">
-          {{ upsonline.title }}
-        </p>
-        <p class="card-text">
-          <small class="text-muted">Last updated 3 mins ago</small>
-        </p>
+<div *ngIf="upsonline.codigo == '1'">
+  <div class="card mb-3" style="max-width: 700px">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="upsonline.image" class="img-fluid rounded-start" alt="..." />
       </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ upsonline.title }}</h5>
+          <p class="card-text" align="justify">
+            UPS ONLINE con tipo control micro-procesado por DSP, generando una mayor calidad de energía, regulación de
+            voltaje de salida <2%, amplio rango de tensión a la entrada, ofrece una protección completa, Bypass
+              automático. </p>
+              <p class="card-text" align="justify">
+                Interfaz RS-232 – USB de comunicación,
+                ranura para SNMP, pantalla LCD todos los parámetros, diseño compacto, software de gestión, tarjetas
+                opcionales de SNMP, contiene
+                dos segmentos de control de carga, salida de THDv <4%, certificación RETIE. </p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+        </div>
+      </div>
+      <p class="card-text">
+        <li>Doble conversión en línea, entrada y salida monofásica.</li>
+        <li>Alto Factor de potencia de Entrada 0.98 y salida 0.9.</li>
+        <li>Alta confiabilidad y Eficiencia > 95%.</li>
+        <li>Función ECO ahorrador de energía.</li>
+        <li>Software de monitoreo local.</li>
+        <li>EPO apagado de emergencia.</li>
+        <li>Conexión batería externa.</li>
+      </p>
     </div>
   </div>
 </div>
+<div *ngIf="upsonline.codigo == '2'">
+  <div class="card mb-3" style="max-width: 700px">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="upsonline.image" class="img-fluid rounded-start" alt="..." />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ upsonline.title }}</h5>
+          <p class="card-text" align="justify">
+            UPS On-line con control DSP. doble conversión en línea, ofreciendo a la carga una mejor calidad de energía.
+            regulación de voltaje de
+            salida <2%, con un alto rango de tensión de entrada. Ofrece una alta confiabilidad y eficiencia en su modo
+              de operación ECO hasta de un 95%, múltiples puertos de comunicación USB y tarjetas opcionales SNMP. </p>
+              <p class="card-text">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </p>
+        </div>
+      </div>
+      <p class="card-text">
+        <li>Equipos monofásicos 220V, Estándar Europeo.</li>
+        <li>Doble conversión en línea, entrada y salida a 220 Vac.</li>
+        <li>Alto factor de potencia de entrada 0.99 y salida 0.9.</li>
+        <li>Alta confiabilidad y eficiencia > 94%.</li>
+        <li>Función ECO ahorrador de energía.</li>
+        <li>Software de monitoreo local.</li>
+        <li>EPO apagado de emergencia.</li>
+        <li>Múltiples puertos de comunicación.</li>
+        <li>Control DSP.</li>
+        <li>Bypass automático.</li>
+        <li>Pantalla LCD todos los parámetros.</li>
+        <li>Certificación RETIE.</li>
+      </p>
+    </div>
+  </div>
+</div>
+<div *ngIf="upsonline.codigo == '3'">
+  <div class="card mb-3" style="max-width: 700px">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="upsonline.image" class="img-fluid rounded-start" alt="..." />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ upsonline.title }}</h5>
+          <p class="card-text" align="justify">
+            Su diseño compacto y de fácil instalación hace la solución ideal para centros de datos pequeños, centros
+            comerciales, bancos, oficinas y aplicaciones que requieren alta densidad de potencia; equipadas con
+            tecnología On-line de doble conversión, control DSP, transformador de aislamiento a la salida de fábrica y
+            alto factor de potencia a la entrada y salida, en un único armario.
+          </p>
+          <p class="card-text" align="justify">
+            Con un excelente rendimiento en cada condición de funcionamiento (incluso a carga parcial) proporcionando
+            grandes beneficios al usuario. Gracias a todas las características mencionadas hacen que dentro de su
+            categoría sea el sistema UPS más sencillo de implementar, administrar y mantener. Si se necesita capacidad
+            adicional o redundancia, es posible instalar hasta 6 equipos en paralelo.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+      <p class="card-text">
+        <li>Equipos monofásicos 220V, Estándar Europeo.</li>
+        <li>Doble conversión en línea, entrada y salida a 220 Vac.</li>
+        <li>Alto factor de potencia de entrada 0.99 y salida 0.9.</li>
+        <li>Alta confiabilidad y eficiencia > 94%.</li>
+        <li>Función ECO ahorrador de energía.</li>
+        <li>Software de monitoreo local.</li>
+        <li>EPO apagado de emergencia.</li>
+        <li>Múltiples puertos de comunicación.</li>
+        <li>Control DSP.</li>
+        <li>Bypass automático.</li>
+        <li>Pantalla LCD todos los parámetros.</li>
+        <li>Certificación RETIE.</li>
+      </p>
+    </div>
+  </div>
+</div>
+<div *ngIf="upsonline.codigo == '4'">
+  <div class="card mb-3" style="max-width: 700px">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img [src]="upsonline.image" class="img-fluid rounded-start" alt="..." />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{ upsonline.title }}</h5>
+          <p class="card-text" align="justify">
+            La serie EA ofrece la combinación perfecta de confiabilidad, rendimiento y rentabilidad, equipadas con
+            sistema de doble conversión en línea y DSP de alta velocidad con control digital; ofrecen a la carga una
+            mejor calidad de energía, alto factor de potencia a la entrada y salida, su función inteligente de auto
+            diagnóstico permite obtener información completa del estado y funcionamiento del equipo, advirtiendo
+            posibles fallas con un alto grado de anticipación.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+      <p class="card-text">
+        <li>Alto factor de potencia de entrada 0.99 y salida de 1.</li>
+        <li>Banco de batería interno.</li>
+        <li>Software de monitoreo local.</li>
+        <li>Acceso frontal para administración.</li>
+        <li>Transformador de aislamiento (Opcional).</li>
+        <li>Certificación RETIE / CE / UL.</li>
+        <li>Tarjeta de comunicación Modbus.</li>
+        <li>Pantalla touchscreen de 7” a color.</li>
+        <li>Idioma Español.</li>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- 
+  <div *ngIf=«condition; else elseBlock»>…</div>
+<ng-template #elseBlock>…</ng-template>
+
+Usando then:
+
+<div *ngIf=»condición; then thenBlock else elseBlock»></div>
+<ng-template #thenBlock>…</ng-template>
+<ng-template #elseBlock>…</ng-template> 
+-->
