@@ -8,9 +8,11 @@ export class ManteelectricoService {
   products: IProducto[] = [
     {
       codigo: '1',
-      image: 'linkimg',
-      title: 'NOMBRE IMG',
-      },
+      image:
+        'assets/images/public/mantenimientos/electrico/mantenimientoelectricol.png',
+      title:
+        'Programación, ejecución, supervisión y control de los sistemas eléctricos ',
+    },
   ];
   constructor() {}
   geAllProducts() {

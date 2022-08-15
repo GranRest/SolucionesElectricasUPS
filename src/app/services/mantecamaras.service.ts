@@ -8,8 +8,8 @@ export class MantecamarasService {
   products: IProducto[] = [
     {
       codigo: '1',
-      image: 'linkimg',
-      title: 'NOMBRE IMG',
+      image: 'assets/images/public/mantenimientos/camaras/camaraVigilancia.jpg',
+      title: 'Camaras de Seguridad',
     },
   ];
   constructor() {}
