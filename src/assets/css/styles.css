@@ -93,6 +93,7 @@
   width: 200px;
   margin-right: 0px;
   animation: latir infinite 5s linear;
+  border-radius:20px 5px 20px 5px;
 }
 #mainNav a:hover,
 .active {
