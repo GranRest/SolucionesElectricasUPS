@@ -9,7 +9,7 @@ export class MantecamarasService {
     {
       codigo: '1',
       image: 'assets/images/public/mantenimientos/camaras/camaraVigilancia.jpg',
-      title: 'Camaras de Seguridad',
+      title: 'Camáras de Seguridad',
     },
   ];
   constructor() {}
