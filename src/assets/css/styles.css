@@ -76,12 +76,12 @@
   --bs-body-bg: #fff;
 }
 #logo {
-  width: auto;
+  width: 500px;
   float: left;
-  margin-left: 0px;
+  margin-left: 50px;
   display: flex;
   font-size: 1px;
-  justify-content: end;
+  justify-content: left;
   border: 0px solid black;
 }
 
