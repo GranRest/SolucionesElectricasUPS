@@ -4,36 +4,43 @@
   <h1 class="h1">Mantenimentos UPS</h1>
 </div>
 
-<div class="row row-cols-1 row-cols-md-4 g-4">
-  <div *ngFor="let mantenimiento of mantenimientosups; let i = index">
-    <div class="card h-100">
-      <img src="{{ mantenimiento.image }}" class="card-img-top" alt="20" />
-      <div class="card-body">
-        <h5 class="card-title">{{ mantenimiento.title }}</h5>
-      </div>
-    </div>
+<div class="row m-5">
+  <div
+    class="col-lg-4 mb-4"
+    *ngFor="let mantenimiento of mantenimientosups; let i = index"
+  >
+    <img
+      class="w-100 mb-4 rounded"
+      src="{{ mantenimiento.image }}"
+      width="150"
+      height="600"
+    />
   </div>
 </div>
 
 <div class="card-body">
   <p class="card-text" align="justify">
-    El mantenimiento de la UPS Sistema de alimentación ininterrumpida (ISAI) o en inglés uninterruptible power supply
-    (UPS) debe programarse durante el horario no comercial para minimizar el impacto en la operación de los equipos
-    respaldados.
+    El mantenimiento de la UPS Sistema de alimentación ininterrumpida (ISAI) o
+    en inglés uninterruptible power supply (UPS) debe programarse durante el
+    horario no comercial para minimizar el impacto en la operación de los
+    equipos respaldados.
   </p>
   <p class="card-text" align="justify">
-    La UPS debe estar des energizada antes de realizar y limpiar la unidad. Una vez que el cable no está enchufado a la
-    toma eléctrica, el técnico comienza a realizar el mantenimiento, la limpieza y la revisión de cada una de sus
-    piezas.
-    Esto garantiza la integridad de la máquina, el técnico profesional y el equipo al que se puede conectar a la UPS.
+    La UPS debe estar des energizada antes de realizar y limpiar la unidad. Una
+    vez que el cable no está enchufado a la toma eléctrica, el técnico comienza
+    a realizar el mantenimiento, la limpieza y la revisión de cada una de sus
+    piezas. Esto garantiza la integridad de la máquina, el técnico profesional y
+    el equipo al que se puede conectar a la UPS.
   </p>
   <p class="card-text">
     Revisión general del estado del equipo:
     <li>Limpieza general de equipos.</li>
     <li>Ajuste mecánico de componentes y partes del equipo.</li>
     <li>Ajuste de los terminales de conexión eléctrica.</li>
-    <li>Revisión del proceso de control: Tarjeta drivers, tarjeta de cargador, tarjeta de Inversor, tarjeta de control y
-      sensores.</li>
+    <li>
+      Revisión del proceso de control: Tarjeta drivers, tarjeta de cargador,
+      tarjeta de Inversor, tarjeta de control y sensores.
+    </li>
   </p>
   <p class="card-text">
     Revisión y verificación de los procesos de medición y señalización:
@@ -58,7 +65,8 @@
     <li>Pruebas de descarga controlada.</li>
   </p>
   <p class="card-text">
-    Inicio de la comprobación del equipo y ajuste de los parámetros de funcionamiento:
+    Inicio de la comprobación del equipo y ajuste de los parámetros de
+    funcionamiento:
     <li>Voltaje de la fuente de alimentación.</li>
     <li>Voltaje de entrada y salida.</li>
     <li>Corriente de entrada y salida.</li>
@@ -67,10 +75,16 @@
     <li>Pruebas para verificar bancos de baterías.</li>
     <li>Revisión, limpieza y prueba de transformadores de aislamiento.</li>
     <li>Limpieza general del entorno de la UPS.</li>
-    <li>Sustitución de componentes de acuerdo a las recomendaciones técnicas del fabricante.</li>
+    <li>
+      Sustitución de componentes de acuerdo a las recomendaciones técnicas del
+      fabricante.
+    </li>
     <li>Calibración del dispositivo de monitoreo</li>
     <li>Pruebas del UPS con el tablero de transferencia automática.</li>
     <li>Revisión, limpieza y prueba de los transformadores de aislamiento.</li>
-    <li>Prueba del funcionamiento de la UPS con carga, con entrada automática de batería.</li>
+    <li>
+      Prueba del funcionamiento de la UPS con carga, con entrada automática de
+      batería.
+    </li>
   </p>
 </div>
