@@ -6,13 +6,35 @@ import { IProducto } from '../interfaces/iproducto';
 })
 export class ManteelectricoService {
   products: IProducto[] = [
+    // {
+    //   codigo: '1',
+    //   image:
+    //     'assets/images/public/mantenimientos/electrico/mantenimientoelectricol.png',
+    //   title:
+    //     'Programación, ejecución, supervisión y control de los sistemas eléctricos ',
+    // },
     {
-      codigo: '1',
+      codigo: '2',
       image:
-        'assets/images/public/mantenimientos/electrico/mantenimientoelectricol.png',
+        'assets/images/public/mantenimientoelectrico/WhatsApp Imag 46.jpg',
       title:
-        'Programación, ejecución, supervisión y control de los sistemas eléctricos ',
+        'Foto 2',
     },
+    {
+      codigo: '3',
+      image:
+        'assets/images/public/mantenimientoelectrico/WhatsApp Imag 47.jpg',
+      title:
+        'Foto 3',
+    },
+    {
+      codigo: '4',
+      image:
+        'assets/images/public/mantenimientoelectrico/WhatsApp Imag 48.jpg',
+      title:
+        'Foto 4',
+    },
+  
   ];
   constructor() {}
   geAllProducts() {

@@ -8,7 +8,7 @@ export class AcumuladoresService {
   products: IProducto[] = [
     {
       codigo: '1',
-      image: 'assets/images/public/reguladores/REGULADOR POWEST 23.jpg',
+      image: 'assets/images/public/acumuladores/ups.png',
       title: 'Acumulador 1',
     },
   ];
