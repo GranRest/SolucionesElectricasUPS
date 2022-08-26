@@ -3,15 +3,23 @@
 <div style="justify-content: center">
   <h1 class="h1">Acumuladores</h1>
 </div>
-
+<div class="card-body">
+  <p class="card-text" align="justify">
+    Es un equipo robusto con la capacidad de dar respaldo por horas o días dependiendo la necesidad del usuario
+    Sus partes electrónicas son diseñadas para cargar diferentes bancos de baterías ya que su cargador es de 60 amp de
+    corriente continúa.
+    Diseñados para trabajar en estaciones de radio, antenas de comunicación en equipos médicos o lugares donde los
+    cortes de energía sobrepasen las horas o los días.
+  </p>
+</div>
 <div class="row row-cols-1 row-cols-md-4 g-4">
   <div *ngFor="let acumulador of acumuladores; let i = index">
-    <div class="card h-100">
+    <div class="card-body">
       <img src="{{ acumulador.image }}" class="card-img-top" alt="20" />
       <div class="card-body">
         <!-- <h5 class="card-title">{{ acumulador.title }}</h5> -->
       </div>
-      <div class="d-grid gap-2">
+      <!-- <div class="d-grid gap-2">
         <button
           class="btn btn-primary"
           type="button"
@@ -19,7 +27,8 @@
         >
           Leer más
         </button>
-      </div>
+      </div> -->
     </div>
+
   </div>
 </div>
