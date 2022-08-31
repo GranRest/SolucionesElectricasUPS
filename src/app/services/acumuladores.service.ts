@@ -6,10 +6,20 @@ import { IProducto } from '../interfaces/iproducto';
 })
 export class AcumuladoresService {
   products: IProducto[] = [
+    // {
+    //   codigo: '1',
+    //   image: 'assets/images/public/acumuladores/ups.png',
+    //   title: 'Acumulador 1',
+    // },
     {
-      codigo: '1',
-      image: 'assets/images/public/acumuladores/ups.png',
-      title: 'Acumulador 1',
+      codigo: '2',
+      image: 'assets/images/public/acumuladores/ups3.jpg',
+      title: 'Acumulador 2',
+    },
+    {
+      codigo: '3',
+      image: 'assets/images/public/acumuladores/ups2.jpg',
+      title: 'Acumulador 3',
     },
   ];
   constructor() {}
