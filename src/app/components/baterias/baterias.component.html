@@ -4,8 +4,8 @@
   <h1 class="h1">Baterías</h1>
 </div>
 
-<div class="row row-cols-1 row-cols-md-4 g-4">
-  <div *ngFor="let bateria of baterias; let i = index">
+<div class="row m-5">
+  <div class="col-lg-3 mb-3" *ngFor="let bateria of baterias; let i = index">
     <div class="card h-100">
       <img src="{{ bateria.image }}" class="card-img-top" alt="20" />
       <div class="card-body">

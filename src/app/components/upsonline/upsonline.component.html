@@ -3,10 +3,19 @@
   <h1 class="h1">UPS Online</h1>
 </div>
 
-<div class="row row-cols-1 row-cols-md-4 g-4">
-  <div *ngFor="let upsonline of upsonlines; let i = index">
+<div class="row m-5">
+  <div
+    class="col-lg-3 mb-4"
+    *ngFor="let upsonline of upsonlines; let i = index"
+  >
     <div class="card h-100">
-      <img src="{{ upsonline.image }}" class="card-img-top" alt="ups"  />
+      <img
+        src="{{ upsonline.image }}"
+        class="card-img-top"
+        alt="ups"
+        width="100"
+        height="400"
+      />
       <div class="card-body">
         <h5 class="card-title">{{ upsonline.title }}</h5>
       </div>

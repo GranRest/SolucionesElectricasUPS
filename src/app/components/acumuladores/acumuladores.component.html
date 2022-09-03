@@ -5,29 +5,27 @@
 </div>
 <div class="card-body">
   <p class="card-text" align="justify">
-    Es un equipo robusto con la capacidad de dar respaldo por horas o días dependiendo la necesidad del usuario.
-    Sus partes electrónicas son diseñadas para cargar diferentes bancos de baterías ya que su cargador es de 60 amp de
-    corriente continúa.
-    Diseñados para trabajar en estaciones de radio, antenas de comunicación en equipos médicos o lugares donde los
-    cortes de energía sobrepasen las horas o los días.
+    Es un equipo robusto con la capacidad de dar respaldo por horas o días
+    dependiendo la necesidad del usuario. Sus partes electrónicas son diseñadas
+    para cargar diferentes bancos de baterías ya que su cargador es de 60 amp de
+    corriente continúa. Diseñados para trabajar en estaciones de radio, antenas
+    de comunicación en equipos médicos o lugares donde los cortes de energía
+    sobrepasen las horas o los días.
   </p>
 </div>
-<div class="row row-cols-1 row-cols-md-4 g-4">
-  <div *ngFor="let acumulador of acumuladores; let i = index">
+<div class="row m-5">
+  <div
+    class="col-lg-4 mb-4"
+    *ngFor="let acumulador of acumuladores; let i = index"
+  >
     <div class="card-body">
-      <img src="{{ acumulador.image }}" class="card-img-top" alt="acumuladores-foto" />
-      <div class="card-body">
-        <!-- <h5 class="card-title">{{ acumulador.title }}</h5> -->
-      </div>
-      <!-- <div class="d-grid gap-2">
-        <button
-          class="btn btn-primary"
-          type="button"
-          (click)="redireccionamiento(acumulador.codigo)"
-        >
-          Leer más
-        </button>
-      </div> -->
+      <img
+        src="{{ acumulador.image }}"
+        class="card-img-top"
+        width="100"
+        height="380"
+      />
+      <div class="card-body"></div>
     </div>
   </div>
 </div>
